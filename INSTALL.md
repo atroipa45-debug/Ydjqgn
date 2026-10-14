@@ -1,0 +1,14 @@
+# نصب CHOST روی Railway
+
+1. همه‌ی فایل‌ها رو توی یه ریپوی **Private** گیت‌هاب آپلود کن (Add file ← Upload files).
+2. توی Railway بزن **New Project ← Deploy from GitHub repo** و همین ریپو رو انتخاب کن.
+3. توی سرویس، یه **Volume** روی مسیر `/var/lib/pasarguard` بساز.
+4. برو **Settings ← Networking ← Generate Domain** و پورت رو **8080** بذار.
+5. صبر کن دیپلوی تموم بشه (حدود 2 تا 4 دقیقه). توی لاگ باید `DONE` رو ببینی.
+
+| بخش | آدرس |
+|:--|:--|
+| پنل | `https://<دامنه>/dashboard/` |
+| ساب‌لینک | `https://<دامنه>/sub/<توکن>` |
+
+ورود اولیه: `admin` / `admin`. بعد از اولین ورود، از **تنظیمات** رمز رو عوض کن.
